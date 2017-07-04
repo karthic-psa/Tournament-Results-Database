@@ -1,13 +1,13 @@
 
 DESIGN A TOURNAMENT RESULTS DATABASE
 
-In this project, you’ll be writing a Python module that uses the PostgreSQL database to keep track of players and matches in a game tournament.
+In this project, we wrote a Python module that uses the PostgreSQL database to keep track of players and matches in a game tournament.
 
 The game tournament will use the Swiss system for pairing up players in each round: players are not eliminated, and each player should be paired with another player with the same number of wins, or as close as possible.
 This project has two parts: defining the database schema (SQL table definitions), and writing the code that will use it.
 
 Modern data-driven applications require developers that know how to store data and interact programmatically with that data. 
-In this project, you’ll design a database based off of a provided specification and use case and then write code that makes use of that data.
+In this project, we designed a database based off of a provided specification and use case and then write code that makes use of that data.
 
 We architect and develop a database containing fully normalized data within multiple tables. 
 We modify this data and query it to meet the demands of a variety of use cases.
