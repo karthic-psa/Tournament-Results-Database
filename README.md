@@ -24,25 +24,25 @@ Properly establishing data relationships and using the appropriate data types en
 ..2. Use the command ```\i tournament.sql``` to import the whole file into psql at once.
 
 ## FUNCTIONS IN ```TOURNAMENT.PY``` ##
-1. ```registerPlayer(name)```
+1. ```registerPlayer(name)```:
 	Adds a player to the tournament by putting an entry in the database. The database should assign an ID number to the player. Different players may have the same names but will receive different ID numbers.
 
-2. ```countPlayers()```
+2. ```countPlayers()```:
 	Returns the number of currently registered players. This function should not use the Python len() function; it should have the database count the players.
 
-3. ```deletePlayers()```
+3. ```deletePlayers()```:
 	Clear out all the player records from the database.
 
-4. ```reportMatch(winner, loser)```
+4. ```reportMatch(winner, loser)```:
 	Stores the outcome of a single match between two players in the database.
 
 5. ```deleteMatches()```
 	Clear out all the match records from the database.
 
-6. ```playerStandings()```
+6. ```playerStandings()```:
 	Returns a list of (id, name, wins, matches) for each player, sorted by the number of wins each player has.
 
-7. ```swissPairings()```
+7. ```swissPairings()```:
 Given the existing set of registered players and the matches they have played, generates and returns a list of pairings according to the Swiss system. 
 Each pairing is a tuple (id1, name1, id2, name2), giving the ID and name of the paired players. 
 For instance, if there are eight registered players, this function should return four pairings. 
